@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- action / method / submit -->
+     <form action="/login" method="get">
+        <label for="username">응애</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">응애</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <button type="submit">응애?</button><br><br>
+     </form>
+
+    <form action="/secret" method="post">
+        응애 : <input type="password" name="hidden"> <br/>
+        <input type="submit" value="응애!"><br><br>
+
+    </form>
+
+    <form action="/detect" method="post" enctype="multipart/form-data">
+        <label for="file">응애 업로드</label><br>
+        <input type="file" id="file" name="file" accept=".txt,.jpg,.png"><br>
+
+        <button type="submit">응애 탐지</button><br><br>
+    </form>
+
+    <form action="/compare" method="post" enctype="multipart/form-data">
+        <label for="file1">응애 1</label><br>
+        <input type="file" id="file1" name="file1" accept=".txt,.jpg,.png"><br>
+
+        <label for="file2">응애 2</label><br>
+        <input type="file" id="file2" name="file2" accept=".txt,.jpg,.png"><br>
+
+        <button type="submit">응애 비교</button>
+    </form>
+</body>
+</html>
