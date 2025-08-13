@@ -1,8 +1,13 @@
 from flask import Flask, render_template, request, redirect, make_response
-
 from aws import detect_labels_local_file, compare_faces
 from werkzeug.utils import secure_filename
 
+import os
+
+# Ensure the static directory exists
+if not os.path.exists("static"):
+    os.makedirs("static")
+    
 app = Flask(__name__)
 @app.route("/")
 def exam01():
